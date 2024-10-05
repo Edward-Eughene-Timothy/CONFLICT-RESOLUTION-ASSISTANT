@@ -40,7 +40,7 @@ pip install streamlit langchain langchain-community huggingface-hub
 1. **Clone the Repository**:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Edward-Eughene-Timothy/CONFLICT-RESOLUTION-ASSISTANT.git
    cd conflict-resolution-assistant
    ```
 
@@ -57,7 +57,7 @@ pip install streamlit langchain langchain-community huggingface-hub
 
 ## Code Explanation
 
-- **Main File**: The main logic is contained in `main.py`, where the application initializes the QA model, handles user input, and generates responses.
+- **Main File**: The main logic is contained in `model6.py`, where the application initializes the QA model, handles user input, and generates responses.
 - **Custom Prompt Template**: A specialized prompt designed to elicit empathetic responses from the language model based on user context.
 - **Model Loading**: The `load_llm()` function initializes the language model used for generating responses.
 - **QA Chain Creation**: The `create_qa_chain()` function sets up the RetrievalQA chain, which combines the language model with the document retrieval system.
