@@ -8,8 +8,9 @@ The **Conflict Resolution Assistant** is a Streamlit application designed to pro
 
 - **Conversational Interface**: Engages users in a friendly, supportive manner.
 - **Empathetic Responses**: Uses a specialized prompt to generate compassionate responses tailored to the user's context and emotions.
+- **Intent Recognition**: Identifies user intents such as greetings, requests for support, or general queries.
 - **Retrieval-Augmented Generation**: Combines user queries with contextual information to provide informed answers.
-- **Easy-to-Use**: Built with Streamlit for a seamless user experience.
+- **Intel-Optimized Performance**: Leverages the Intel Distribution for Python for enhanced performance on Intel hardware.
 
 ## Technologies Used
 
@@ -17,17 +18,20 @@ The **Conflict Resolution Assistant** is a Streamlit application designed to pro
 - **LangChain**: A framework for building applications powered by language models.
 - **FAISS**: For efficient similarity search and retrieval of context documents.
 - **Hugging Face Transformers**: For embeddings and language model integration.
+- **Intel Distribution for Python**: For optimized performance on Intel hardware.
+- **CTransformers**: For running the Llama-2 language model.
 
-## Getting Started
 
-### Prerequisites
 
-Ensure you have the following installed:
+## Prerequisites
 
 - Python 3.7+
+- Intel Distribution for Python
 - Streamlit
-- LangChain community packages
-- HuggingFace Transformers
+- LangChain and LangChain Community packages
+- Hugging Face Transformers
+- FAISS
+- CTransformers
 
 You can install the necessary packages using pip:
 
@@ -70,8 +74,9 @@ pip install streamlit langchain langchain-community huggingface-hub
 
 ## Troubleshooting
 
-- If you encounter issues initializing the QA bot, ensure that the FAISS vector store path is correctly set and that all required packages are installed.
-- For any other errors, check the terminal for traceback messages to identify the source of the issue.
+ If you encounter issues with Intel optimizations, ensure you're using the Intel Distribution for Python and that your environment is set up correctly.
+- For FAISS-related errors, check that your vectorstore is properly initialized and located in the correct directory.
+- If you experience out-of-memory errors, consider reducing the model size or adjusting the `max_new_tokens` parameter in `load_llm()`.
 
 ## Contributing
 
