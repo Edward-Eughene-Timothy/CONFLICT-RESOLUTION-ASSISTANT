@@ -54,7 +54,7 @@ pip install streamlit langchain langchain-community huggingface-hub
    Start the Streamlit server by running:
 
    ```bash
-   streamlit run main.py
+   streamlit run model6.py
    ```
 
 4. **Access the App**: Open your browser and navigate to `http://localhost:8501`.
